@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form with JavaScript Functions</title>
+  <style>
+    .error {
+      color: red;
+    }
+    .padit {
+        padding: 10px;
+    }
+  </style>
+    
+</head>
+<body>
+    <div style="display:flex; background-color: aqua; justify-content: center; max-width:750px ; 
+    max-height:750px; margin-left: auto; margin-right: auto; margin-top: 100px; margin-bottom: auto;">
+        <form id="myForm">
+            <div class="padit">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <span id="nameError" class="error"></span>
+            </div>
+            <div class="padit">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <span id="emailError" class="error"></span>
+            </div>
+            <div class="padit">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" cols="17" required></textarea>
+              <span id="messageError" class="error"></span>
+            </div>
+            <div class="padit">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+    </div>
+  
+    <!-- run validation on #id "myForm" -->
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
